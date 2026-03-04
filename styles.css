@@ -4,7 +4,10 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
-
+html,
+body {
+  overflow-x: hidden;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -16,7 +19,6 @@ body {
   color: white;
   line-height: 1.6;
   font-family: "Segoe UI", sans-serif;
-  overflow-x: hidden;
 }
 nav {
   display: flex;
@@ -415,7 +417,7 @@ header {
     z-index: 3;
   }
   .nav-links {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
